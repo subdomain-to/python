@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "subdomainto"
+version = "0.1.0"
+description = "Typed Python SDK for the subdomain.to API."
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.9"
+dependencies = ["httpx>=0.24,<1"]
+
+[project.optional-dependencies]
+test = ["pytest>=8", "pytest-cov>=5"]
